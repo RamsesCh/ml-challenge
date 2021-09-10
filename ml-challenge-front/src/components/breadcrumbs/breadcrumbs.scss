@@ -1,0 +1,18 @@
+@import "../../assets/css/color-theme.scss";
+
+.list-categories {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    margin: 16px 0px;
+    li {
+        color: $dark-tertiary;
+    }
+    li:not(:last-child):after{
+        content: ">";
+        margin: 0px 8px;
+    }
+    li:last-child {
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,68 @@
+@import '../../assets/css/color-theme.scss';
+
+.content-item {
+    background-color: #fff;
+    display: flex;
+    padding: 32px;
+    .col-left {
+        width: 75%;
+        .image-item{
+            text-align: center;
+            img {
+                width: 680px;
+            }
+        }
+        .description-item {
+            margin-top: 32px;
+            .title {
+                margin: 0px;
+                font-size: 28px;
+                color: $dark-principal;
+            }
+            .description {
+                font-size: 16px;
+                color: $dark-tertiary;
+                white-space:pre-line;
+                text-align: justify;
+            }
+        }
+    }
+    .col-right {
+        width: 25%;
+        .condition-item {
+            font-size: 14px;
+            color: $dark-secondary;
+            margin: 0px 0px 16px 0px;
+        }
+        .title-item {
+            font-size: 24px;
+            color: $dark-principal;
+            font-weight: 600;
+            margin: 0px;
+        }
+        .price-title {
+            color: $dark-principal;
+            margin: 32px 0px;
+            position: relative;
+            .price{
+                font-size: 46px;
+            }
+            .decimals{
+                position: absolute;
+                font-size: 28px;
+                margin: 5px;
+            }
+        }
+        .btn-shop {
+            background-color: $blue-primary;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            padding: 10px;
+            width: 100%;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
