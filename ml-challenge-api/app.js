@@ -57,7 +57,7 @@ app.get('/api/items/:id', async(req, res)=>{
                 amount: resItem.data.price,
                 decimals: 0,
             },
-            picture: resItem.data.pictures[0].secure_url,
+            picture: resItem.data.pictures,
             condition: resItem.data.condition,
             free_shippin: resItem.data.shipping.free_shipping,
             sold_quantity: resItem.data.sold_quantity,
